@@ -1,0 +1,23 @@
+{
+  "name": "revideo-demo",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "revideo editor --projectFile ./src/project.tsx",
+    "render": "tsc && node dist/render.js",
+    "render:mp4": "tsx scripts/render.ts",
+    "render:portrait:all": "tsx scripts/render-portrait-all.ts"
+  },
+  "dependencies": {
+    "@revideo/2d": "0.10.4",
+    "@revideo/core": "0.10.4",
+    "@revideo/renderer": "0.10.4"
+  },
+  "devDependencies": {
+    "@revideo/cli": "0.10.4",
+    "@revideo/ui": "0.10.4",
+    "tsx": "^4.21.0",
+    "typescript": "5.5.4",
+    "vite": "^4.5"
+  }
+}
